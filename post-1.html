@@ -1,0 +1,197 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Пост #1 — Сайт(форум)</title>
+  <meta name="description" content="Индексируемая страница поста.">
+  
+  <link rel="canonical" href="https://example.local/post-1.html">
+  
+  <meta property="og:title" content="Пост #1 — Сайт(форум)">
+  <meta property="og:description" content="Индексируемая страница поста.">
+  <meta property="og:type" content="website">
+
+  <link rel="stylesheet" href="assets/styles.css">
+</head>
+<body>
+
+<header class="topbar">
+  <div class="container inner">
+    <a class="brand" href="index.html"><span class="logo" aria-hidden="true"></span><span>Сайт(форум)</span></a>
+    <nav class="navlinks only-desktop">
+      <a class="" href="news.html">Новости</a>
+      <a class="" href="about.html">О нас</a>
+      <a class="" href="rules.html">Правила</a>
+      <a class="" href="feedback.html">Обратная связь</a>
+      <a class="" href="agreement.html">Соглашение</a>
+      <a class="" href="contact-chat.html">Чат с админами</a>
+    </nav>
+    <div class="right row">
+      <div class="mode" aria-label="Режим">
+        <button type="button" data-mode-btn="drugs">228/Наркотики</button>
+        <button type="button" data-mode-btn="corruption">Коррупция</button>
+      </div>
+      <a class="btn secondary only-desktop" href="login.html">Вход</a>
+      <a class="btn only-desktop" href="register.html">Регистрация</a>
+      <a class="btn ghost only-mobile" data-drawer-open href="javascript:void(0)">☰</a>
+    </div>
+  </div>
+</header>
+<div class="overlay"></div>
+<div class="sidebar card flat" aria-label="Мобильное меню">
+  <div class="side">
+    <div class="row">
+      <div class="brand"><span class="logo" aria-hidden="true"></span><span>Меню</span></div>
+      <button class="btn ghost right" data-drawer-close>✕</button>
+    </div>
+    <div class="sep"></div>
+    <a class="item " href="news.html"><span class="icon"></span>Новости</a>
+    <a class="item " href="about.html"><span class="icon"></span>О нас</a>
+    <a class="item " href="rules.html"><span class="icon"></span>Правила</a>
+    <a class="item " href="feedback.html"><span class="icon"></span>Обратная связь</a>
+    <a class="item " href="agreement.html"><span class="icon"></span>Соглашение</a>
+    <a class="item " href="contact-chat.html"><span class="icon"></span>Чат с админами</a>
+    <div class="sep"></div>
+    <a class="item" href="login.html"><span class="icon"></span>Вход</a>
+    <a class="item" href="register.html"><span class="icon"></span>Регистрация</a>
+    <div class="sep"></div>
+    <a class="item" href="app/feed.html"><span class="icon"></span>В интерфейс</a>
+  </div>
+</div>
+
+<main class="container" style="padding:16px 0 24px">
+
+<div class="grid-main">
+  <section class="stack">
+    <div class="row wrap">
+      <div>
+        <div class="h1">Пост /post/:id</div>
+        <div class="muted">Гость: чтение. Комментирование — после входа.</div>
+      </div>
+      <div class="right row wrap">
+        <a class="btn secondary" href="news.html">К ленте</a>
+        <a class="btn" href="login.html">Войти</a>
+      </div>
+    </div>
+
+    <div class="card flat">
+      
+<article class="card flat post">
+  <div class="votes">
+    <button class="vbtn">▲</button>
+    <div class="h3">123</div>
+    <button class="vbtn">▼</button>
+  </div>
+  <div class="stack" style="gap:8px">
+    <div class="row wrap">
+      <a class="post-title" href="post-1.html">Заголовок поста (пример)</a>
+      <span class="badge">Текст</span>
+      <span class="badge team"><span class="icon"></span>Официально</span>
+      <span class="right muted small">12:34 · 01.01.2026</span>
+    </div>
+    <div class="thumb" aria-hidden="true"></div>
+    <div class="meta">
+      <span class="pill"><span class="avatar"></span>Ник</span>
+      <span class="pill"><span class="icon"></span>Режим: <span data-mode-a="228/Наркотики" data-mode-b="Коррупция"></span></span>
+      <a class="pill" href="../rules.html"><span class="icon"></span>Правила</a>
+    </div>
+    <div class="phline" style="max-width:92%"></div>
+    <div class="phline" style="max-width:84%"></div>
+    <div class="actions">
+      <div class="react">
+        <button class="rbtn" type="button">👍 12</button>
+        <button class="rbtn" type="button">🔥 4</button>
+        <button class="rbtn" type="button">😮 1</button>
+      </div>
+      <a class="pill" href="post-1.html#comments"><span class="icon"></span>Комментарии</a>
+      <div class="dots" data-dots>
+        <button aria-label="Меню">⋯</button>
+        <div class="menu">
+          <a href="post-1.html#quote"><span class="icon"></span>Цитировать</a>
+          <a href="../report.html"><span class="icon"></span>Пожаловаться</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</article>
+
+    </div>
+
+    <div class="card pad" id="comments">
+      <div class="row wrap">
+        <div class="h2">Комментарии (чтение)</div>
+        <div class="right"><a class="btn" href="login.html">Войти чтобы комментировать</a></div>
+      </div>
+      <div class="hr" style="margin:12px 0"></div>
+      <div class="comments">
+        <div class="c">
+          <div class="avatar"></div>
+          <div class="cbody">
+            <div class="cmeta"><span class="h3">Ник</span><span class="badge">Клиент</span><span>·</span><span>2ч назад</span></div>
+            <div class="ctext"><div class="phline" style="max-width:92%"></div><div class="phline" style="max-width:78%"></div></div>
+            <div class="actions"><div class="react"><button class="rbtn">👍 2</button></div></div>
+          </div>
+        </div>
+        <div class="c indent">
+          <div class="avatar"></div>
+          <div class="cbody">
+            <div class="cmeta"><span class="h3">Команда</span><span class="badge team"><span class="icon"></span>Команда</span><span>·</span><span>1ч назад</span></div>
+            <div class="ctext"><div class="phline" style="max-width:88%"></div><div class="phline" style="max-width:70%"></div></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="hr" style="margin:12px 0"></div>
+      <div class="notice" id="quote">
+        <div class="h3">Цитирование (плейсхолдер)</div>
+        <div class="muted small">Доступно после входа.</div>
+      </div>
+    </div>
+  </section>
+
+  <aside class="stack">
+    <div class="card pad">
+      <div class="h2">Сайдбар</div>
+      <div class="hr" style="margin:12px 0"></div>
+      <a class="btn block" href="contact-chat.html">Написать админам</a>
+      <a class="btn secondary block" href="report.html">Пожаловаться</a>
+    </div>
+  </aside>
+</div>
+
+</main>
+
+<footer class="footer">
+  <div class="container">
+    <div class="grid">
+      <div class="stack">
+        <div class="h3">Футер</div>
+        <div class="phline" style="max-width:340px"></div>
+        <div class="phline" style="max-width:420px"></div>
+        <div class="phline" style="max-width:280px"></div>
+      </div>
+      <div class="stack">
+        <div class="h3">Источники трафика</div>
+        <div class="social">
+          <a href="https://vk.com" target="_blank" rel="noopener"><span class="dot">VK</span><span>VK</span></a>
+          <a href="https://t.me" target="_blank" rel="noopener"><span class="dot">TG</span><span>Telegram</span></a>
+        </div>
+        <div class="row">
+          <a class="pill" href="feedback.html"><span class="icon"></span>Обратная связь</a>
+          <a class="pill" href="contact-chat.html"><span class="icon"></span>Чат с админами</a>
+        </div>
+      </div>
+    </div>
+    <div class="hr" style="margin:14px 0"></div>
+    <div class="row wrap small">
+      <span class="muted">SEO: public indexable + canonical/OG (плейсхолдер). Admin: noindex.</span>
+      <span class="right muted">© Placeholder</span>
+    </div>
+  </div>
+</footer>
+
+
+<script src="assets/main.js" defer></script>
+</body>
+</html>

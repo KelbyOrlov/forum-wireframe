@@ -1,0 +1,116 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Редактирование поста — Admin</title>
+  <meta name="description" content="Админка.">
+  <meta name="robots" content="noindex,nofollow">
+  
+  
+  <link rel="stylesheet" href="../assets/styles.css">
+</head>
+<body>
+
+<header class="topbar">
+  <div class="container inner">
+    <a class="brand" href="../index.html"><span class="logo" aria-hidden="true"></span><span>Сайт(форум)</span></a>
+    <button class="btn ghost only-mobile" data-drawer-open aria-label="Открыть меню">☰</button>
+    <div class="search only-desktop" role="search">
+      <span class="icon" aria-hidden="true"></span>
+      <input placeholder="Поиск (плейсхолдер)">
+      <span class="kbd">⌘K</span>
+    </div>
+    <div class="right row">
+      <div class="mode" aria-label="Режим">
+        <button type="button" data-mode-btn="drugs">228/Наркотики</button>
+        <button type="button" data-mode-btn="corruption">Коррупция</button>
+      </div>
+      <a class="btn secondary only-desktop" href="profile.html#notifications">Уведомления</a>
+      <a class="btn only-desktop" href="submit.html">Предложить</a>
+    </div>
+  </div>
+</header>
+<div class="overlay"></div>
+
+<main class="container layout-app">
+  <aside class="sidebar">
+    <div class="card flat">
+      <div class="side">
+        <div class="row">
+          <div class="h3">Админ</div>
+          <button class="btn ghost right only-mobile" data-drawer-close>✕</button>
+        </div>
+        <div class="sep"></div>
+        <a class="item active" href="review.html"><span class="icon"></span>Очередь</a>
+        <a class="item " href="blacklist.html"><span class="icon"></span>Чёрный список</a>
+        <div class="sep"></div>
+        <a class="item" href="../app/feed.html"><span class="icon"></span>В App</a>
+        <span class="noindex">noindex</span>
+      </div>
+    </div>
+  </aside>
+  <section class="stack">
+    <div class="breadcrumbs"><span class="noindex">noindex</span><a href="review.html">/admin</a><span class="chev">›</span><span>Редактирование поста</span></div>
+    
+<section class="card pad">
+  <div class="row wrap">
+    <div><div class="h1">Редактирование поста</div><div class="muted">Окно 24 часа (плейсхолдер: доступно).</div></div>
+    <div class="right row wrap">
+      <a class="btn" href="post-1-edit-saved.html">Сохранить</a>
+      <a class="btn danger" href="post-1-deleted.html">Удалить</a>
+    </div>
+  </div>
+</section>
+<section class="card pad">
+  <div class="notice">
+    <div class="h3">Осталось: 12:34:56</div>
+    <div class="muted small">таймер — плейсхолдер</div>
+  </div>
+  <div class="hr" style="margin:12px 0"></div>
+  <form class="form" action="post-1-edit-saved.html">
+    <label>Заголовок</label><input placeholder="Плейсхолдер">
+    <label>Контент</label><textarea placeholder="Плейсхолдер"></textarea>
+    <div class="row wrap" style="margin-top:12px">
+      <a class="btn" href="post-1-edit-saved.html">Сохранить</a>
+      <a class="btn secondary" href="../post-1.html">Открыть пост</a>
+    </div>
+  </form>
+</section>
+
+    
+<footer class="footer">
+  <div class="container">
+    <div class="grid">
+      <div class="stack">
+        <div class="h3">Футер</div>
+        <div class="phline" style="max-width:340px"></div>
+        <div class="phline" style="max-width:420px"></div>
+        <div class="phline" style="max-width:280px"></div>
+      </div>
+      <div class="stack">
+        <div class="h3">Источники трафика</div>
+        <div class="social">
+          <a href="https://vk.com" target="_blank" rel="noopener"><span class="dot">VK</span><span>VK</span></a>
+          <a href="https://t.me" target="_blank" rel="noopener"><span class="dot">TG</span><span>Telegram</span></a>
+        </div>
+        <div class="row">
+          <a class="pill" href="../feedback.html"><span class="icon"></span>Обратная связь</a>
+          <a class="pill" href="../contact-chat.html"><span class="icon"></span>Чат с админами</a>
+        </div>
+      </div>
+    </div>
+    <div class="hr" style="margin:14px 0"></div>
+    <div class="row wrap small">
+      <span class="muted">SEO: public indexable + canonical/OG (плейсхолдер). Admin: noindex.</span>
+      <span class="right muted">© Placeholder</span>
+    </div>
+  </div>
+</footer>
+
+  </section>
+</main>
+
+<script src="../assets/main.js" defer></script>
+</body>
+</html>

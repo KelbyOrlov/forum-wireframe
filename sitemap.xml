@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url><loc>https://example.local/index.html</loc></url>
+  <url><loc>https://example.local/news.html</loc></url>
+  <url><loc>https://example.local/post-1.html</loc></url>
+  <url><loc>https://example.local/about.html</loc></url>
+  <url><loc>https://example.local/rules.html</loc></url>
+  <url><loc>https://example.local/agreement.html</loc></url>
+  <url><loc>https://example.local/feedback.html</loc></url>
+  <url><loc>https://example.local/contact-chat.html</loc></url>
+</urlset>
