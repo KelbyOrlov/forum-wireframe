@@ -55,25 +55,29 @@
   });
 
   // Propagate mode to internal links
-  function shouldSkip(a){
-    const href=a.getAttribute('href')||'';
-    if(!href || href.startsWith('#') || href.startsWith('mailto:') || href.startsWith('tel:')) return true;
-    if(href.startsWith('http://')||href.startsWith('https://')||href.startsWith('javascript:')) return true;
-    return false;
-  }
-  qsa('a[href]').forEach(a=>{
-    if(shouldSkip(a)) return;
-    const href=a.getAttribute('href');
-    const parts=href.split('#');
-    const path=parts[0];
-    const hash=parts[1]?'#'+parts[1]:'';
-    try{
-      const u=new URL(path, location.href);
-      if(u.origin!==location.origin) return;
-      u.searchParams.set('mode', mode);
-      a.setAttribute('href', u.pathname.replace(/\/forum-wireframe\//, '') + u.search + hash);
-    }catch(e){}
-  });
+function shouldSkip(a){
+  const href=a.getAttribute('href')||'';
+  if(!href || href.startsWith('#') || href.startsWith('mailto:') || href.startsWith('tel:')) return true;
+  if(href.startsWith('http://')||href.startsWith('https://')||href.startsWith('javascript:')) return true;
+  return false;
+}
+qsa('a[href]').forEach(a=>{
+  if(shouldSkip(a)) return;
+  const href=a.getAttribute('href');
+  const parts=href.split('#');
+  const path=parts[0];
+  const hash=parts[1]?'#'+parts[1]:'';
+  try{
+    const u=new URL(path, location.href);
+    if(u.origin!==location.origin) return;
+    u.searchParams.set('mode', mode);
+
+    const basePath = location.pathname.split('/').slice(0,2).join('/') + '/'; // "/forum-wireframe/"
+    const cleanPath = u.pathname.startsWith(basePath) ? u.pathname.slice(basePath.length) : u.pathname.replace(/^\//,'');
+    a.setAttribute('href', cleanPath + u.search + hash);
+
+  }catch(e){}
+});
 
   // Dots menus
   function closeAllMenus(){ qsa('.menu.open').forEach(m=>m.classList.remove('open')); }
