@@ -71,7 +71,7 @@
       const u=new URL(path, location.href);
       if(u.origin!==location.origin) return;
       u.searchParams.set('mode', mode);
-      a.setAttribute('href', u.pathname.replace(/^\//,'') + u.search + hash);
+      a.setAttribute('href', u.pathname.replace(/\/forum-wireframe\//, '') + u.search + hash);
     }catch(e){}
   });
 
