@@ -65,7 +65,8 @@ qsa('a[href]').forEach(a=>{
   if(shouldSkip(a)) return;
   const href=a.getAttribute('href');
   const parts=href.split('#');
-  const path=parts[0];
+  let path = parts[0];
+  path = path.replace(/^\/?forum-wireframe\//, '');
   const hash=parts[1]?'#'+parts[1]:'';
   try{
     const u=new URL(path, location.href);
